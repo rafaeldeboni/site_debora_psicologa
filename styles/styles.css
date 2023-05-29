@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400,500;600;700&display=swap');
+ 
+:root {
+    --cor-primaria: rgb(221, 217, 218);
+    --cor-secundaria: #97667b;
+    --cor-terciaria: #ffffff;
+    --cor-textoprincipal: rgb(58, 49, 52);
+    --cor-hover: #db97b5;
+
+    --fonte-primaria: 'Wix Madefor Display', sans-serif;
+    --fonte-secundaria: 
+}
+
+ *{
+    margin: 0;
+    padding: 0;
+ }
+
+body{
+   /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-textoprincipal);
+}
+
+.cabecalho{
+    padding: 0% 0% 0% 13.7%
+}
+
+
+.cabecalho__menu{
+display: flex;
+gap: 60px
+}
+
+.cabecalho__menu__link{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--cor-terciaria);
+}
+
+.frase-destaque {
+    color: var(--cor-secundaria);
+
+}
+
+.apresentacao {
+    padding: 2% 7.5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 75px;
+}
+
+.apresentacao__conteudo{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.apresentacao__titulo{
+    font-size: 2.7rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+    text-align: left;
+
+}
+
+.apresentacao__nome{
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    width: 75%;
+    text-align: left;
+}
+
+.contato__link{
+    font-size: 1.4rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+    width: 75%;
+    text-align: center;
+    
+}
+
+.botao__chamada{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.botao__chamada__layout{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid var(--cor-secundaria);
+    width: 40%;
+    padding: 21px 0;
+    border-radius: 26px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    text-decoration: none;
+
+}
+
+.botao__chamada__layout:hover {
+    background-color: var(--cor-hover);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
+}
+
+ul.topicos {
+    list-style-type: disc;
+   
+}
+
+.topicos {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: var(--fonte-primaria);
+    text-align: left;
+    width: 580px;
+    margin-left: 3.5%;
+}
+
+.foto_debora{
+    width: 35%;
+}
+
+.rodape{
+    padding: 14px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: var(--fonte-primaria);
+    text-align: center;
+}
+
+.endereco{
+    padding: 2% 5% 15%;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+.endereco__conteudo{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.endereco__conteudo__titulo{
+    width: 65%;
+    font-size: 1.3rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+    text-align: center;
+    color: var(--cor-secundaria)
+
+}
+
+.endereco__conteudo__endereco{
+    font-size: 1.1rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+    width: 65%;
+    text-align: center;
+}
+
+.google__maps{
+    width: 35%;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 10% 59% 0% 0%
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .endereco{
+        flex-direction: column-reverse;
+        padding: 5%;
+        gap: 45px;
+       
+    }
+    .endereco__conteudo{
+        justify-content: center;
+        width: 100%;
+        padding: 5%;
+
+}
+    .google__maps{
+        justify-content: center;
+        width: 100%;
+        gap: 5px;
+        padding: 5%;
+    }
+
+    .rodape{
+        width: auto;
+    }
+}
